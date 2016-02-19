@@ -44,6 +44,7 @@ def main():
 
     args = parser.parse_args()
     maxhits = args.maxhits
+    #Get user specified URL
     url = args.url[0]
     url_list = [url]
 
@@ -70,15 +71,17 @@ def main():
         CheckedSites = CheckedSites + 1
         urlParent = url
         url = url_list.pop()
+        #Check if URL is working properly
         s = readwebpage(url)
         AmountVisited = AmountVisited + 1
-
+        
+        #If URL is not working properly
         if s == None:
             dict_webs[urlParent] = url
             print("* bad reference to ", url, " on ", start )
             badpages = badpages + 1
             
-
+        #Start scanning HTML of the webpage to find other URLs
         else:
             urls_list1 = re.findall(r'href="([\s:]?[^\'" >]+)', s)  #Nigel stated its ok for me to use re.findall in an email.
             #print(urls_list1)
