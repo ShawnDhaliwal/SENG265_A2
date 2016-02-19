@@ -5,4 +5,4 @@ This is a simple website checker that parses the HTML code of a specified websit
 HOW TO RUN:
 Download Checkwebsite.py
 Compile using a command like... 
-"python3 Checkwebsite.py maxvisits 10 (url goes here)
+"python3 Checkwebsite.py maxvisits 10 (url goes here)"
