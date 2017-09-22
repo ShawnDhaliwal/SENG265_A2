@@ -1,5 +1,3 @@
-# SENG265_A2
-
 This is a simple website checker that parses the HTML code of a specified website and finds bad reference URLs on it.
 
 HOW TO RUN:
