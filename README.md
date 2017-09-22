@@ -1,4 +1,4 @@
-This is a simple website checker that parses the HTML code of a specified website and finds bad reference URLs on it. This was part of a course related assignment.
+This is a simple website checker that parses the HTML code of a specified website and finds bad reference URLs on it. This was part of a course assignment.
 
 ### HOW TO RUN:
 Download Checkwebsite.py<br>
