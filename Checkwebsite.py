@@ -7,7 +7,7 @@
 import urllib.request
 import urllib.error
 import argparse
-import re             #Nigel stated in email I can use this
+import re             
 import sys
 
 timeout = 1         # 1 second limit on reading a webpage
@@ -83,7 +83,7 @@ def main():
             
         #Start scanning HTML of the webpage to find other URLs
         else:
-            urls_list1 = re.findall(r'href="([\s:]?[^\'" >]+)', s)  #Nigel stated its ok for me to use re.findall in an email.
+            urls_list1 = re.findall(r'href="([\s:]?[^\'" >]+)', s)  
             #print(urls_list1)
             duplicate = urls_list1[:]
             dict_webs[url] = []
